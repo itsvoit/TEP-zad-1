@@ -38,19 +38,25 @@ void test_alloc(){
 
 // zad 4
 void test_CTable(){
-	std::cout << "Declaring static CTable variable with parameters (\"Tablica\", 5)\n";
+	std::cout << "Declare static CTable variable with parameters (\"Tablica\", 5)\n";
 	CTable table("tablica", CONST_5);
 
-	std::cout << "Declaring dynamic CTable variable\n";
+	std::cout << "Declare dynamic CTable variable that's a clone of the static var\n";
 	CTable *newTable = table.pcClone();
 
 	std::cout << "Set name for dynamic var to \"Kopia\"\n";
 	newTable->vSetName("Kopia");
 
+	std::cout << "Allocate dynamically an array sized 10 of CTable objects\n";
+	CTable *array = new CTable [CONST_10];
+
 	std::cout << "Set new size (15) for dynamic var, return: " << std::boolalpha << newTable->bSetNewSize(CONST_15) << std::endl;
 
-	std::cout << "Deleting dynamic variable\n";
+	std::cout << "Delete dynamic variable\n";
 	delete newTable;
+
+	std::cout << "Delete the array\n";
+	delete [] array;
 
 	std::cout << "Return from test function...\n";
 }
