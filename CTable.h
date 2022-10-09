@@ -12,8 +12,7 @@ class CTable{
 	int *tab;
 	int tab_len;
 
-	void init(std::string sName, int iTableLen);
-
+	void init_table();
 public:
 	CTable();
 	CTable(std::string sName, int iTableLen);
@@ -24,7 +23,7 @@ public:
 	void vSetName(std::string sName);
 	bool bSetNewSize(int iTableLen);
 	CTable* pcClone();
-
+	void print();
 };
 
 #endif //TEP_LISTA1_CLION_CTABLE_H
