@@ -12,6 +12,9 @@ const int CONST_5 = 5;
 const int CONST_10 = 10;
 const int CONST_15 = 15;
 
+const std::string TEST_NAME = "Tablica";
+const std::string TEST_KOPIA = "Kopia";
+
 // CTable constants
 const std::string CTABLE_DEFAULT_NAME = "Unnamed";
 const int CTABLE_DEFAULT_SIZE = 10;
