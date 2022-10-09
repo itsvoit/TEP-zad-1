@@ -8,7 +8,7 @@
 #include <iostream>
 
 void v_alloc_table_fill_34(int size){
-	if (!is_positive(size)) return;
+	if (size <= 0) return;
 
 	int* tab = new int [size];
 	for (int i = 0; i < size; ++i) {
@@ -24,7 +24,7 @@ void v_alloc_table_fill_34(int size){
 }
 
 bool b_alloc_table_2_dim(int ***piTableCopy, int iSizeX, int iSizeY){
-	if (!is_positive(iSizeX) || !is_positive(iSizeY)) return false;
+	if (iSizeX <= 0 || iSizeY <= 0) return false;
 
 	*piTableCopy = new int* [iSizeY];
 
@@ -56,7 +56,7 @@ bool b_alloc_table_2_dim(int ***piTableCopy, int iSizeX, int iSizeY){
 
 // Mozna pominac drugi parametr, bo nie jest uzywany przy dealokacji
 bool b_dealloc_table_2_dim(int **piTable, int iSizeX, int iSizeY){
-	if (!is_positive(iSizeX) || !is_positive(iSizeY)) return false;
+	if (iSizeX <= 0 || iSizeY <= 0) return false;
 
 	for (int i = 0; i < iSizeY; ++i) {
 		delete [] piTable[i];
