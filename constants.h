@@ -13,11 +13,8 @@ const int CONST_10 = 10;
 const int CONST_15 = 15;
 
 const std::string TEST_NAME = "Tablica";
-const std::string TEST_KOPIA = "Kopia";
+const std::string TEST_COPY = "Kopia";
 
-// CTable constants
-const std::string CTABLE_DEFAULT_NAME = "Unnamed";
-const int CTABLE_DEFAULT_SIZE = 10;
 
 #endif //TEP_LISTA1_CLION_CONSTANTS_H
 

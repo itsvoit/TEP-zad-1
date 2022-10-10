@@ -37,7 +37,7 @@ void test_CTable(){
 	CTable *newTable = table.pcClone();
 
 	std::cout << "Set name for dynamic var to \"Kopia\"\n";
-	newTable->vSetName(TEST_KOPIA);
+	newTable->vSetName(TEST_COPY);
 
 	std::cout << "Allocate dynamically an array sized 10 of CTable objects\n";
 	CTable *array = new CTable [CONST_10];
@@ -71,18 +71,18 @@ int main() {
 	std::cout << "End testing CTable methods...\n--------------\n";
 
 	std::cout << "--------------\nStart testing mod procedures...\n";
-	std::cout << "Initialize 'tab' variable (" << TEST_NAME << ", " << CONST_10 << ")\n";
+	std::cout << "Initialize 'pi_tab' variable (" << TEST_NAME << ", " << CONST_10 << ")\n";
 	CTable tab(TEST_NAME, CONST_10);
-	std::cout << "'tab' before the call: ";
-	tab.print();
+	std::cout << "'pi_tab' before the call: ";
+	tab.vPrint();
 	std::cout << "Call void v_mod_tab(CTable cTab, int iNewSize)\n";
 	v_mod_tab(tab, CONST_5);
-	std::cout << "'tab' after the call: ";
-	tab.print();
+	std::cout << "'pi_tab' after the call: ";
+	tab.vPrint();
 	std::cout << "Call void v_mod_tab(CTable *pcTab, int iNewSize)\n";
 	v_mod_tab(&tab, CONST_5);
-	std::cout << "'tab' after the call: ";
-	tab.print();
+	std::cout << "'pi_tab' after the call: ";
+	tab.vPrint();
 	std::cout << "End testing mod procedures...\n--------------\n";
 
 	return 0;
