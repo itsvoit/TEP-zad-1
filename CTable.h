@@ -2,8 +2,8 @@
 // Created by voit on 05.10.2022.
 //
 
-#ifndef TEP_LISTA1_CLION_CTABLE_H
-#define TEP_LISTA1_CLION_CTABLE_H
+#ifndef TEP_LISTA1_CTABLE_H
+#define TEP_LISTA1_CTABLE_H
 
 #include <string>
 
@@ -33,5 +33,5 @@ public:
 	void vPrint();
 };
 
-#endif //TEP_LISTA1_CLION_CTABLE_H
+#endif //TEP_LISTA1_CTABLE_H
 

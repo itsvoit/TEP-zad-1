@@ -3,20 +3,19 @@
 //
 
 #include "allocation_functions.h"
-#include "helper.h"
 #include "constants.h"
 #include <iostream>
 
-void v_alloc_table_fill_34(int size){
-	if (size <= 0) return;
+void v_alloc_table_fill_34(int iSize){
+	if (iSize <= 0) return;
 
-	int* tab = new int [size];
-	for (int i = 0; i < size; ++i) {
-		tab[i] = ALLOC_TABLE_32;
+	int* tab = new int [iSize];
+	for (int i = 0; i < iSize; ++i) {
+		tab[i] = I_ALLOC_TABLE_32;
 	}
 
-	for (int i = 0; i < size; ++i) {
-		std::cout << tab[i] << " ";
+	for (int i = 0; i < iSize; ++i) {
+		std::cout << tab[i] << C_SPACE;
 	}
 
 	std::cout << std::endl;
@@ -49,7 +48,6 @@ bool b_alloc_table_2_dim(int ***piTableCopy, int iSizeX, int iSizeY){
 		}
 		std::cout << std::endl;
 	}
-
 #endif //DEBUG
 	return true;
 }
