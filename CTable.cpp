@@ -3,10 +3,8 @@
 //
 
 #include <iostream>
-#include <cmath>
 #include <string>
 #include "CTable.h"
-#include "constants.h"
 
 void CTable::vSetName(std::string sName){
 	s_name = sName;
